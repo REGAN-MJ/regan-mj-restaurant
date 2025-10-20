@@ -1,0 +1,341 @@
+
+body{
+  font-family: 'Candara','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+  background-color: grey;
+  color: white;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(images/banner-8\ new.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  align-items: center;
+  padding:2%;
+  
+}
+.box3{
+  
+  justify-content: center;
+  align-items:center;
+
+}
+
+.menulist{
+  padding-left:10px;
+  width: 250px;
+  height: 40px;
+  border-bottom: 2PX solid white;
+  align-items: center;
+  justify-content: center;
+}
+#icons{
+  width: 25px;
+  height: 25px;
+  margin-right:10px;
+
+
+}
+
+.box3>.menulist>a,h1{
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Candara', Helvetica, sans-serif;
+}
+.box3,.logo{
+  width: 100px;
+  height: 100px;
+  background-color:;
+}
+.box3,.logo,img{
+  width: 150px;
+  height: 140px
+  
+}
+.box4{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+.startbtn{
+ 
+  bottom: 20px;
+  left: 50%;
+ 
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.startbtn:hover{
+  background-color: black;
+  
+  transition:transform 1s ease;
+
+}
+
+
+.main1{
+  margin-top: 20px;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+
+.box1, .box2{
+  width: 45%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+
+.box1 img, .box2 img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.main2{
+  margin-top: 20px;
+  background-color: darkgrey;
+  color: white;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  
+}
+.main2>.box5>.socials{
+  
+  width: 50%;
+  height: 50px;
+  display: inline-block;
+}
+.main2>.box5>.socials>a>img{
+  width:30px;
+  height:30px;
+  margin:10px;
+  display: inline-block;
+}
+
+.main2>.box5>.newsletter{
+  
+  width: 90%;
+  height:100px;
+  padding-left: 5px;
+  
+  
+}
+input{
+  width: 50%;
+  height: 25px;
+  margin-top: px;
+  padding: 5px;
+  border: white;
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
+}
+.subscribebtn{
+  width: 110px;
+  height: 35px;
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px;
+  background-color: rgb(38, 38, 133);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.unsubscribebtn{
+  margin-left: 5px;
+  width: 115px;
+  height: 35px;
+  background-color: rgb(38, 38, 133);
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+}
+.box6>img{
+  width: 140px;
+  height: 140px;
+}
+p{
+  font-size: 15px;
+}
+
+
+footer{
+  background-color: grey;
+  color: white;
+  width: 99.55%;
+  height: auto;
+  padding-left: 5px;
+}
+.box7{
+  width: 100%;
+  height: 500px;
+  
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+
+}
+.box8,.box9,.box10{
+  width: 300px;
+  height:500px ;
+  
+
+}
+.box11{
+  width: 100%;
+  height: 200px;
+
+
+  
+}
+.endtagscontainer{
+  width: 100%;
+  height: 50px;
+  
+  display: flex;
+  flex-direction: row;
+  
+}
+.endtags{
+  width: 120px;
+  height: 25px;
+  
+  border-right:1px solid black ;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.endtags>a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+
+@media (max-width: 850px){
+  
+  header{
+   flex-direction:column;
+   
+  }
+
+ 
+  .main1{
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .box1, .box2{
+    width: 100%;
+    
+    height: 50%;
+  }
+  .box3{
+      
+      width: 60%;
+      max-width: 420px;
+      height: 500px;
+      margin-right:100px;
+  } 
+  .box4{
+      width: 60%;
+      max-width: 420px;
+      height: 100px;
+    }
+  
+  
+  .main2{
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+    
+  }
+  .box5{
+    height: 250px;
+    
+
+  }
+  .unsubscribebtn{
+    margin-top: 5px;
+  }
+  .box7{
+    flex-direction: column;
+    height: auto;
+  }
+  .box8,.box9,.box10{
+    width: 100%;
+    height: auto;
+  }
+  .endtagscontainer{
+    display: flex;
+    
+  }
+
+
+}
+@media (min-width: 851px){
+  .main1{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box1, .box2{
+    width: 50%;
+    height: 70%;
+  }
+  .box3{
+        margin-left:100px;
+        width: 45%;
+        height: 400px;
+  }
+   .box4{
+        
+        width: 45%;
+        height: 400px;
+  }
+
+  .box5{
+  width:70%;
+  height: 200px;
+  
+  
+}
+
+.box6{
+  width:30%;
+  height: 200px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+}
+
