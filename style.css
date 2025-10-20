@@ -9,7 +9,7 @@ header{
   height: 600px;
   position: relative;
   overflow: hidden;
-  background-image: url(images/banner-8\ new.jpg);
+  
   background-position: center;
   background-size: cover;
   display: flex;
@@ -51,7 +51,7 @@ header{
 .box3,.logo{
   width: 100px;
   height: 100px;
-  background-color:;
+  
 }
 .box3,.logo,img{
   width: 150px;
