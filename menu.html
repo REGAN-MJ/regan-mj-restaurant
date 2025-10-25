@@ -2,54 +2,41 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>REGAN MJ FOODS</title>
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <title>menu</title>
+        <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
-        <header>
-            <div class="box3">
-                <div class="logo">
-                    <img src="images/new logo2.png" alt="">
-                </div>
-                
-                <div class="menulist">
-                    <a href="menu.html"><h1><img id="icons" src="images/chef 2.png" alt="icon">MENU</h1></a>   
-
-                </div>
-                 <div class="menulist">
-                    <a href=""><h1><img id="icons" src="images/location.png" alt="icon">LOCATIONS</h1></a>
-                    
-                </div>
-                 <div class="menulist">
-                    <a href=""><h1><img id="icons" src="images/carrer.png" alt="icon">CAREERS</h1></a>
-
-                </div>
-                 <div class="menulist">
-                    <a href=""><h1><img id="icons" src="images/feedback.png" alt="icon">FEEDBACK</h1></a>
-
-                </div>
-                 <div class="menulist">
-                    <a href=""><h1><img id="icons" src="images/about.png" alt="icon">ABOUT US</h1></a>
-
+        <div class="header">
+            <div class="logo"></div>
+            <div class="dishes">
+                <h1>OUR MENU</h1>
+                <p>Explore our delicious offerings, crafted to satisfy every craving.</p>
+                <div class="menu">
+                    <div class="menuitem">
+                        <img src="images/break.png" alt="breakfast">
+                        <h2>BREAKFAST</h2>
+                    </div>
+                    <div class="menuitem">
+                        <img src="images/drinks.png" alt="drinks">
+                        <h2>DRINKS</h2>
+                    </div>
+                    <div class="menuitem">
+                        <img src="images/lunch.png" alt="mains">
+                        <h2>MAINS</h2>
+                    </div>
+                    <div class="menuitem">
+                        <img src="images/deserts.png" alt="desserts">
+                        <h2>DESSERTS</h2>
+                    </div>
                 </div>
             </div>
-            <div class="box4">
-                <button class="startbtn">START ORDER</button>
-            </div>
-           
-        </header>
 
-        <main class="main1">
-            <div class="box1">
-                <img src="images/gift-card-home.jpg" alt="gift card">
-            </div>
-            <div class="box2">
-                <img src="images/home-page-superfoods-brand-new.jpg" alt="">
-            </div>
-        </main>
-
-        <main class="main2">
+        </div>
+        
+         <main class="main2">
             <div class="box5">
                 <div class="socials">
                     <a href=""><img src="images/facebook.png" alt=""></a>
@@ -111,32 +98,4 @@
 
         </footer>
     </body>
-
-
-    <script>
-  const images = [
-  "images/banner-8 new.jpg",
-  "images/banner-9.jpg",
-  "images/banner-5.jpg",
-  "images/banner-4.jpg",
-  "images/banner-3.jpg",
-];
-
-let currentIndex = 0;
-const header = document.querySelector("header"); // select the header element
-
-function changeBackground() {
-  header.style.backgroundImage = `url('${images[currentIndex]}')`;
-  header.style.backgroundSize = "cover";
-  header.style.backgroundPosition = "center";
-  header.style.transition = "background-image 1s ease-in-out";
-
-  currentIndex = (currentIndex + 1) % images.length;
-}
-
-changeBackground(); // show the first image immediately
-setInterval(changeBackground, 4000); // change every 4 seconds
-
-    </script>
-    <script src="script"></script>
 </html>

@@ -1,0 +1,62 @@
+body{
+    background-image:url("images/menu\ background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header{
+    height: 800px;
+    width: 100%;
+
+    
+}
+.logo{
+
+    height: 200px;
+    width: 230px;
+    background-image: url("images/new\ logo2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dishes{
+    text-align: center;
+    color: white;
+    margin-top: -150px;
+}
+.dishes h1{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.dishes p{
+    font-size: 25px;
+}
+
+.menu{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+
+}
+.menuitem{
+    background-image: url(images/lunch.png);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: aquamarine;
+    background-size: cover;
+    
+
+}
+.menuitem>img{
+    width: 250px;
+    height: 250px;
+    visibility:hidden;
+    
+}
