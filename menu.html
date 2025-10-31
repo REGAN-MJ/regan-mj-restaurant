@@ -2,64 +2,235 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-        <title>menu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu - Regan MJ Restaurant</title>
         <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="style.css">
-        
     </head>
     <body>
         <div class="header">
             <div class="logo"></div>
-            <div class="dishes">
-                <h1>OUR MENU</h1>
-                <p>Explore our delicious offerings, crafted to satisfy every craving.</p>
-                <div class="menu">
-                    <div class="menuitem">
-                        <img src="images/break.png" alt="breakfast">
-                        <h2>BREAKFAST</h2>
+            <h1>OUR MENU</h1>
+            <p>Explore our delicious offerings, crafted to satisfy every craving.</p>
+        </div>
+
+        <div class="menu-container">
+            <!-- Starters -->
+            <section class="menu-category">
+                <h2 class="category-title">Starters</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="images/lunch.png" alt="Crispy Calamari" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Crispy Calamari</h3>
+                                <span class="menu-item-price">UGX 25,000</span>
+                            </div>
+                            <p class="menu-item-description">Golden-fried calamari rings served with citrus aioli and marinara sauce</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Seafood</span>
+                                <span class="tag">Crispy</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="menuitem">
-                        <img src="images/drinks.png" alt="drinks">
-                        <h2>DRINKS</h2>
-                    </div>
-                    <div class="menuitem">
-                        <img src="images/lunch.png" alt="mains">
-                        <h2>MAINS</h2>
-                    </div>
-                    <div class="menuitem">
-                        <img src="images/deserts.png" alt="desserts">
-                        <h2>DESSERTS</h2>
+                    
+                    <div class="menu-item">
+                        <img src="images/lunch.png" alt="Bruschetta" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Classic Bruschetta</h3>
+                                <span class="menu-item-price">UGX 18,000</span>
+                            </div>
+                            <p class="menu-item-description">Toasted bread topped with fresh tomatoes, basil, and garlic</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Italian</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
+            <!-- Main Courses -->
+            <section class="menu-category">
+                <h2 class="category-title">Main Courses</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="images/lunch.png" alt="Grilled Salmon" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Grilled Atlantic Salmon</h3>
+                                <span class="menu-item-price">UGX 45,000</span>
+                            </div>
+                            <p class="menu-item-description">Fresh salmon fillet with lemon herb butter, served with roasted vegetables</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Seafood</span>
+                                <span class="tag">Gluten-free</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/lunch.png" alt="Beef Tenderloin" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Beef Tenderloin Steak</h3>
+                                <span class="menu-item-price">UGX 55,000</span>
+                            </div>
+                            <p class="menu-item-description">8oz grass-fed beef with red wine reduction and truffle mashed potatoes</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Beef</span>
+                                <span class="tag">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/lunch.png" alt="Chicken Marsala" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Chicken Marsala</h3>
+                                <span class="menu-item-price">UGX 35,000</span>
+                            </div>
+                            <p class="menu-item-description">Pan-seared chicken breast in mushroom marsala sauce with pasta</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Poultry</span>
+                                <span class="tag">Italian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vegetarian Options -->
+            <section class="menu-category">
+                <h2 class="category-title">Vegetarian Delights</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="images/lunch.png" alt="Vegetable Curry" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Aromatic Vegetable Curry</h3>
+                                <span class="menu-item-price">UGX 28,000</span>
+                            </div>
+                            <p class="menu-item-description">Mixed vegetables in coconut curry sauce served with basmati rice</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Vegan</span>
+                                <span class="tag">Spicy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/lunch.png" alt="Mushroom Risotto" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Wild Mushroom Risotto</h3>
+                                <span class="menu-item-price">UGX 32,000</span>
+                            </div>
+                            <p class="menu-item-description">Creamy arborio rice with wild mushrooms and parmesan</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Vegetarian</span>
+                                <span class="tag">Italian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Desserts -->
+            <section class="menu-category">
+                <h2 class="category-title">Desserts</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="images/deserts.png" alt="Tiramisu" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Classic Tiramisu</h3>
+                                <span class="menu-item-price">UGX 22,000</span>
+                            </div>
+                            <p class="menu-item-description">Coffee-soaked ladyfingers layered with mascarpone cream</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Italian</span>
+                                <span class="tag">Coffee</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/deserts.png" alt="Chocolate Lava Cake" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Chocolate Lava Cake</h3>
+                                <span class="menu-item-price">UGX 25,000</span>
+                            </div>
+                            <p class="menu-item-description">Warm chocolate cake with molten center, served with vanilla ice cream</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Chocolate</span>
+                                <span class="tag">Hot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Drinks -->
+            <section class="menu-category">
+                <h2 class="category-title">Beverages</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="images/drinks.png" alt="Signature Cocktail" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Passion Fruit Mojito</h3>
+                                <span class="menu-item-price">UGX 18,000</span>
+                            </div>
+                            <p class="menu-item-description">Fresh passion fruit, mint, rum, and lime</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Cocktail</span>
+                                <span class="tag">Refreshing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/drinks.png" alt="Fresh Juice" class="menu-item-image">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Fresh Tropical Juice</h3>
+                                <span class="menu-item-price">UGX 12,000</span>
+                            </div>
+                            <p class="menu-item-description">Blend of mango, pineapple, and orange</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Non-alcoholic</span>
+                                <span class="tag">Fresh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        
-         <main class="main2">
+
+        <!-- Footer from style.css -->
+        <main class="main2">
             <div class="box5">
                 <div class="socials">
                     <a href=""><img src="images/facebook.png" alt=""></a>
                     <a href=""><img src="images/instagram.png" alt=""></a>
                     <a href=""><img src="images/twitter.png" alt=""></a>
-
-
                 </div>
-                 <div class="newsletter">
+                <div class="newsletter">
                     <p>join our email list</p>
-                    <input type="text" placeholder="Email address"><button class="subscribebtn">SUBSCRIBE</button><button class="unsubscribebtn">UNSUBSCRIBE</button>
+                    <input type="text" placeholder="Email address">
+                    <button class="subscribebtn">SUBSCRIBE</button>
+                    <button class="unsubscribebtn">UNSUBSCRIBE</button>
                     <p>By clicking "SUBSCRIBE" I agree to receive news, promotions, information, and offers from Regan MJ.</p>
-
-                    
                 </div>
-
-
             </div>
             <div class="box6">
                 <img src="images/tripadvisor-logo.png" alt="trip logo">
                 <img src="images/service-logo.png" alt="service logo">
             </div>
-
         </main>
 
         <footer>
@@ -85,17 +256,16 @@
                  Prices are quoted in Uganda Shillings and inclusive of VAT.
                 </P>
                 <div class="endtagscontainer">
-                 <div class="endtags"><a href="">Privacy Policy</a></div>
-                 <div class="endtags"><a href="">Terms of Use</a></div>
-                 <div class="endtags"><a href="">Cotact Us</a></div>
-                 <div class="endtags"><a href="">Partners</a></div>
-                 <div class="endtags"><a href="">Careers</a></div>
-                 <div class="endtags"><a href="">Blog</a></div>
-                 <div class="endtags"><a href="">Feedback</a></div>
+                    <div class="endtags"><a href="">Privacy Policy</a></div>
+                    <div class="endtags"><a href="">Terms of Use</a></div>
+                    <div class="endtags"><a href="">Contact Us</a></div>
+                    <div class="endtags"><a href="">Partners</a></div>
+                    <div class="endtags"><a href="">Careers</a></div>
+                    <div class="endtags"><a href="">Blog</a></div>
+                    <div class="endtags"><a href="">Feedback</a></div>
                 </div>
                 <p>© 2025 Regan MJ. All Rights Reserved</p>
             </div>
-
         </footer>
     </body>
 </html>

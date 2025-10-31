@@ -1,62 +1,129 @@
-body{
-    background-image:url("images/menu\ background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+body {
+    font-family: 'Candara', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
-.header{
-    height: 800px;
-    width: 100%;
 
-    
+.header {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
 }
-.logo{
 
-    height: 200px;
-    width: 230px;
-    background-image: url("images/new\ logo2.png");
+.logo {
+    height: 120px;
+    width: 120px;
+    margin: 0 auto 1rem;
+    background-image: url("images/new\\ logo2.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
-.dishes{
-    text-align: center;
-    color: white;
-    margin-top: -150px;
-}
-.dishes h1{
-    font-size: 70px;
-    margin-bottom: 10px;
-}
-.dishes p{
-    font-size: 25px;
+
+.menu-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
 }
 
-.menu{
-    margin-top: 50px;
-    text-align: center;
-    color: white;
+.menu-category {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
+.category-title {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.menu-item {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    
-
+    align-items: start;
+    gap: 1rem;
 }
-.menuitem{
-    background-image: url(images/lunch.png);
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    border: 5px solid white;
-    background-color: aquamarine;
-    background-size: cover;
-    
 
+.menu-item-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
 }
-.menuitem>img{
-    width: 250px;
-    height: 250px;
-    visibility:hidden;
+
+.menu-item-content {
+    flex: 1;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item-name {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.menu-item-price {
+    color: #e44d26;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.menu-item-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.dietary-info {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+.menu-item-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
     
+    .menu-category {
+        padding: 1rem;
+    }
+    
+    .category-title {
+        font-size: 1.5rem;
+    }
 }
