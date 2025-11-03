@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>Contact Us - HIGH TECH SOLUTIONS LTD</title>
+    <style>
+        body{
+            background-color: rgb(50, 50, 124);
+            background-size: cover;
+            background-position: center;
+        }
+        .contact-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            color: white;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .form-group label {
+            color: white;
+            font-size: 16px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .info-item {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .info-item h3 {
+            color: orange;
+            margin-bottom: 10px;
+        }
+
+        .submit-btn {
+            background-color: orange;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #ff9100;
+        }
+         .header>h1{
+                font-size: 40px;
+            }
+        .header>p{
+                font-size: 20px;
+            }
+
+        @media only screen and (max-width: 600px) {
+            .contact-container {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .contact-form {
+                padding: 10px;
+            }
+
+            .info-item {
+                padding: 15px;
+            }
+            .header>h1{
+                font-size: 40px;
+            }
+            .header>p{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+            <div class="logo"><img src="images/new logo2.png" alt="logo"></div>
+            <h1>OUR CUSTOMER OUR BOSS</h1>
+            <p>We appreciate any Feedback from our beloved customers</p>
+        </div>
+
+    <div class="contact-container">
+        <h2 style="text-align: center; color: orange; margin-bottom: 30px;">Contact Us</h2>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <div style="text-align: center;">
+                <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+        </form>
+
+        <div class="contact-info">
+            <div class="info-item">
+                <h3>Address</h3>
+                <p>NANSANA<br>WAKISO<br>CA 94025</p>
+            </div>
+            
+            <div class="info-item">
+                <h3>Contact Info</h3>
+                <p>+256-706-315-436<br>Email: info@reganmjfoods.co.ug</p>
+            </div>
+            
+            <div class="info-item">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="box5">
+            <div class="socials">
+                <a href=""><img src="Images/facebook.png" alt=""></a>
+                <a href=""><img src="Images/instagram.png" alt=""></a>
+                <a href=""><img src="Images/twitter.png" alt=""></a>
+            </div>
+            <div class="newsletter">
+                <p>join our email list</p>
+                <input type="text" placeholder="Email address"><button class="subscribebtn">SUBSCRIBE</button><button class="unsubscribebtn">UNSUBSCRIBE</button>
+                <p>By clicking "SUBSCRIBE" I agree to receive news, promotions, information, and offers from High-Tech Solutions.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 HighTech. All rights reserved.</p>
+    </footer>
+</body>
+</html>
